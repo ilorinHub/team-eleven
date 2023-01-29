@@ -197,6 +197,7 @@ return [
 
         App\Providers\PaymentProvider::class,
         App\Providers\TransactionReferenceProvider::class,
+        App\Providers\ProductSKUProvider::class,
 
     ],
 

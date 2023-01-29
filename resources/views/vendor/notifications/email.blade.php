@@ -40,7 +40,7 @@
 {{ $salutation }}
 @else
 @lang('Regards'),<br>
-The {{ config('app.name') }}
+The {{ config('app.name') }} Team
 @endif
 
 {{-- Subcopy --}}

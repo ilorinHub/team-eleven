@@ -23,8 +23,6 @@
 <x-mail::footer>
 © {{ date('Y') }} {{ config('app.name') }}. @lang('All rights reserved.') \
  \
-{{ config('app.name') }} \
-@lang('8 Nupe Road, GRA') \
 @lang('Ilorin 240212') \
 @lang('Nigeria')
 </x-mail::footer>

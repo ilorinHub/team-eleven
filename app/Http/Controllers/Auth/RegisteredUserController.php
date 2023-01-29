@@ -53,7 +53,11 @@ class RegisteredUserController extends Controller
                 'password' => Hash::make($request->password),
             ]);
 
-            $user->roles()->attach(\App\Models\Role::where('name', 'user')->first());
+            $user->roles()->attach(\App\Models\Role::where('name', 'retailer')->first());
+
+            if ( $user->email == config('kwara-ecomm.admin_email') ) {
+                $user->roles()->attach(\App\Models\Role::where('name', 'admin')->first());
+            }
 
             DB::commit();
 
