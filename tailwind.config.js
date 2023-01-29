@@ -16,6 +16,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Commissioner', ...defaultTheme.fontFamily.sans],
+                title: ['Montserrat', ...defaultTheme.fontFamily.sans],
             },
             animation: {
               'bounce-y': 'bounce-y 1s infinite'

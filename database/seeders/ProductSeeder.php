@@ -14,19 +14,19 @@ class ProductSeeder extends Seeder
      */
     public function run()
     {
-        foreach(range(1, 100) as $item) {
+        foreach(range(1, 50) as $item) {
             fake()->randomElement([
             \App\Models\Unit::factory(),
             \App\Models\Yardage::factory()
             ])->has(
                 \App\Models\Product::factory()
-                ->hasAttached(\App\Models\Category::inRandomOrder()->limit(rand(1, 4))->get())
+                ->hasAttached(\App\Models\Category::inRandomOrder()->limit(rand(1, 2))->get())
             )->create();
         }
 
         \App\Models\Product::all()->each(fn($product) =>
             $product
-                ->addMediaFromUrl(fake()->imageUrl(360, 360+100, 'Kwara', true, 'garments', true, 'jpg'))
+                ->addMediaFromUrl(fake()->imageUrl(360, 360+100, 'Clothing', true, 'Skirts', true, 'jpg'))
                 ->toMediaCollection('product-image')
         );
 

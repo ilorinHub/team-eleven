@@ -3,43 +3,51 @@
     class="sticky top-0 z-40">
     <nav class="bg-sky-50">
         <!-- Primary Navigation Menu -->
-        <div class="flex justify-between items-center max-w-6xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
             <div>
                 <a href="{{ route('home') }}">
                   <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
                 </a>
             </div>
             <div class="hidden lg:flex items-center space-x-10 font-medium text-lg">
-                <a
+{{--                 <a
                     href="{{ route('home') }}"
                     class="py-2 {{ request()->routeIs('home') ? 'text-indigo-500' : '' }}"
                     title="home"
                 >
                   Home
+                </a> --}}
+
+                <a
+                    href="#"
+                    class="py-2"
+                    title="About"
+                >
+                  About
                 </a>
 
                 <a
                     href="#"
                     class="py-2"
-                    title="services"
+                    title="Pricing"
                 >
-                  Services
+                  Pricing
                 </a>
 
                 <a
                     href="#"
                     class="py-2"
-                    title="about us"
+                    title="Shipping"
                 >
-                  About us
+                  Shipping
                 </a>
 
                 <a
                     href="#"
                     class="py-2"
-                    title="blog"
+                    title="Contact"
                 >
-                  Blog
+                  Contact
                 </a>
 
                 <a
@@ -76,23 +84,31 @@
                 class="py-3"
                 title="services"
             >
-              Services
+              About
             </a>
 
             <a
                 href="#"
                 class="py-3"
-                title="about us"
+                title="Pricing"
             >
-              About us
+              Pricing
             </a>
 
             <a
                 href="#"
                 class="py-3"
-                title="blog"
+                title="Shipping"
             >
-              Blog
+              Shipping
+            </a>
+
+            <a
+                href="#"
+                class="py-3"
+                title="Contact"
+            >
+              Contact
             </a>
 
             <a

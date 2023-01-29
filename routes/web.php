@@ -18,6 +18,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::view('/components', 'components')->name('components');
+// Axios Requests
+Route::get('/products', \App\Http\Controllers\ProductController::class);
 
 Route::get('/h', \App\Http\Controllers\TestController::class);
 

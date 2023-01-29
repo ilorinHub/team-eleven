@@ -18,6 +18,7 @@
     },
     "dependencies": {
         "@fontsource/commissioner": "^4.5.9",
+        "@fontsource/montserrat": "^4.5.14",
         "@splidejs/splide": "^4.1.4",
         "alpinejs": "^3.10.5",
         "flowbite": "^1.5.3",
